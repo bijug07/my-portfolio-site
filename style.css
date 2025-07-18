@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #004080;
+}
+
+a {
+  color: #0066cc;
+}
+
+.screenshot-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.screenshot-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+  color: #ffff00
+}
+body.dark-mode h2 {
+  color: #ffff00;
+}
+body.dark-mode nav ul li a {
+  color: #f1f1f1;
+}
+
+body.dark-mode .screenshot-gallery img {
+  border-color: #444;
+  box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
+}
+#toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background-color: #004999;
+}
+
+#click-me {
+  border-radius: 5px;
+  color:darkblue
+}
+body.dark-mode #toggle-theme {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode #toggle-theme:hover {
+  background-color: #666;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #ffff00;
+}
+
+.carousel {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the left */
+  gap: 10px;
+}
+
+
+.carousel button {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel button:hover {
+  background-color: #004999;
+}
+
+body.dark-mode .carousel button {
+  background-color: #444;
+  color: #eee;
+}
+
+body.dark-mode .carousel button:hover {
+  background-color: #666;
+}
+.carousel img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}

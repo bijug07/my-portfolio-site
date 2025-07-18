@@ -1,1 +1,50 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biju George - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <h1>Biju George</h1>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m building strong front-end development skills with HTML, CSS, and JavaScript, along with MS Access for data-driven applications. I enjoy crafting clean, responsive websites and improving user experience through DOM manipulation and UI/UX design principles.</p>
+  </section>
+    <section id="projects">
+     <h2>Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website:</strong> This live site you’re viewing now, built with HTML and CSS.</li>
+        <li><strong>MS Access Inventory System:</strong> A desktop database to manage inventory, orders, and restock alerts. Includes forms, reports, and VBA automation.</li>
+      </ul>
+      <h3>Access Project Screenshots</h3>
+      <div class="carousel">
+        <button id="prev-btn">⏮️ Prev</button>
+        <img id="carousel-image" src="form.png" alt="Screenshot" />
+        <button id="next-btn">Next ⏭️</button>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:bijug07@outlook.com">bijug07@outlook.com</a></p>
+      <p>Location: Madison, WI</p>
+    </section>
+    <button id="click-me" onclick="greetUser()">Click Me!</button>
+  </main>
+  <footer>
+  <p>Current Time: <span id="live-clock"></span></p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
